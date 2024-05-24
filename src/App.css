@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-bar {
+  height: 100vh;
+  font-size: 48px;
+  display: grid;
+  /* กำหนดแนวนอน */
+  /* grid-template-rows: 1fr 1fr; */
+  /* กำหนดแนวตั้ง */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  /* grid: repeat(2, 200px) / auto-flow; */
+}
+
+.minibox1 {
+  background-color: blue;
+  grid-column: 1 / -1;
+}
+
+.minibox2 {
+  background-color: teal;
+  grid-row: 2 / 4;
+}
+
+.minibox3 {
+  background-color: firebrick;
+  height: 200px;
+  width: 100%;
+}
+
+.minibox4 {
+  background-color: indigo;
+  grid-area: auto;
+}
+
+.minibox5 {
+  background-color: rgb(0, 255, 119);
+  grid-column: 2 / 4;
+}
